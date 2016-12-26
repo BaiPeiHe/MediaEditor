@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E23070021E10D84200EBBA66 /* Case02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23070011E10D84200EBBA66 /* Case02ViewController.m */; };
+		E23070061E1108BF00EBBA66 /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = E23070051E1108BF00EBBA66 /* leaves.gif */; };
+		E230700D1E11157C00EBBA66 /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E230700C1E11157C00EBBA66 /* AGLKContext.m */; };
+		E23070101E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E230700F1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m */; };
 		E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */; };
 		E2B31FDA1E10D607001A9EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B31FD91E10D607001A9EEF /* AppDelegate.m */; };
 		E2B31FDE1E10D613001A9EEF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B31FDD1E10D613001A9EEF /* RootViewController.m */; };
@@ -39,6 +42,11 @@
 /* Begin PBXFileReference section */
 		E23070001E10D84200EBBA66 /* Case02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case02ViewController.h; sourceTree = "<group>"; };
 		E23070011E10D84200EBBA66 /* Case02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case02ViewController.m; sourceTree = "<group>"; };
+		E23070051E1108BF00EBBA66 /* leaves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaves.gif; sourceTree = "<group>"; };
+		E230700B1E11157C00EBBA66 /* AGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKContext.h; sourceTree = "<group>"; };
+		E230700C1E11157C00EBBA66 /* AGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
+		E230700E1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		E230700F1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 		E275ED2A1E10D6D70075ABDE /* Case01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case01ViewController.h; sourceTree = "<group>"; };
 		E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case01ViewController.m; sourceTree = "<group>"; };
 		E275ED2D1E10D7010075ABDE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -85,6 +93,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E23070041E1108B500EBBA66 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E23070051E1108BF00EBBA66 /* leaves.gif */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E230700A1E11155A00EBBA66 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E230700B1E11157C00EBBA66 /* AGLKContext.h */,
+				E230700C1E11157C00EBBA66 /* AGLKContext.m */,
+				E230700E1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.h */,
+				E230700F1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		E2B31FD21E10D5B9001A9EEF /* Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +169,9 @@
 		E2DDB8E41E10D4DC00688190 /* OpenGLES */ = {
 			isa = PBXGroup;
 			children = (
+				E23070041E1108B500EBBA66 /* Source */,
 				E2B31FD71E10D607001A9EEF /* Application */,
+				E230700A1E11155A00EBBA66 /* Custom */,
 				E2B31FDB1E10D613001A9EEF /* Controller */,
 				E2B31FD21E10D5B9001A9EEF /* Others */,
 				E2DDB8E51E10D4DC00688190 /* Supporting Files */,
@@ -285,6 +314,7 @@
 			files = (
 				E2DDB8F51E10D4DC00688190 /* LaunchScreen.storyboard in Resources */,
 				E2DDB8F21E10D4DC00688190 /* Assets.xcassets in Resources */,
+				E23070061E1108BF00EBBA66 /* leaves.gif in Resources */,
 				E2DDB8F01E10D4DC00688190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +343,9 @@
 				E2B31FDA1E10D607001A9EEF /* AppDelegate.m in Sources */,
 				E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */,
 				E2DDB8E71E10D4DC00688190 /* main.m in Sources */,
+				E23070101E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m in Sources */,
 				E2B31FDE1E10D613001A9EEF /* RootViewController.m in Sources */,
+				E230700D1E11157C00EBBA66 /* AGLKContext.m in Sources */,
 				E23070021E10D84200EBBA66 /* Case02ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

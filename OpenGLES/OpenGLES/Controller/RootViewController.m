@@ -31,7 +31,7 @@
 
 - (void)createData{
     
-    self.titleArr = [NSMutableArray arrayWithObjects:@"",@"", nil];
+    self.titleArr = [NSMutableArray arrayWithObjects:@"绘制三角形",@"", nil];
     
 }
 
