@@ -17,6 +17,6 @@
 }
 
 @property (strong, nonatomic) GLKBaseEffect *baseEffect;
-
+@property (strong, nonatomic) GLKVertexAttribArrayBuffer *vertextBuffer;
 
 @end

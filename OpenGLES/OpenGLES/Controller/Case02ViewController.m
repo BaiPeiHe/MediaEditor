@@ -35,9 +35,9 @@ static const SceneVertex vertices[] =
     
     NSAssert([view isKindOfClass:[GLKView class]], @"View COntroller's view is not a GLKView");
     
-    view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    view.context = [[AGLKContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
-    [EAGLContext setCurrentContext:view.context];
+    [AGLKContext setCurrentContext:view.context];
     
     self.baseEffect = [[GLKBaseEffect alloc] init];
     self.baseEffect.useConstantColor = GL_TRUE;
@@ -54,17 +54,7 @@ static const SceneVertex vertices[] =
                                                               0.0f,
                                                               0.0f,
                                                               1.0f);
-    // 1.为缓存生成唯一的标示
-    glGenBuffers(1,
-                 &vertexBufferID);
-    // 2.为接下来的运算绑定缓存
-    glBindBuffer(GL_ARRAY_BUFFER,
-                 vertexBufferID);
-    // 3.复制数据到缓存中
-    glBufferData(GL_ARRAY_BUFFER,  // 当前上下文所绑定的是哪一个缓存
-                 sizeof(vertices), // 指定复制进这个缓存的字节的数量
-                 vertices,         // 要复制的字节的地址
-                 GL_STATIC_DRAW);  // 缓存在未来的运算中可能将会被怎么使用
+    self.vertextBuffer = [[GLKVertexAttribArrayBuffer alloc] initWithAttribStride:sizeof(SceneVertex) numberOfVertices:sizeof(vertices) / sizeof(SceneVertex) data:vertices usage:GL_STATIC_DRAW];
     
     
     // 纹理
@@ -79,24 +69,13 @@ static const SceneVertex vertices[] =
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect{
     [self.baseEffect prepareToDraw];
     
-    glClear(GL_COLOR_BUFFER_BIT);
+    [(AGLKContext *)view.context clear:GL_COLOR_BUFFER_BIT];
     
-    // 4.启动
-    glEnableVertexAttribArray(GLKVertexAttribPosition);
+    [self.vertextBuffer prepareToDrawWithAttrib:GLKVertexAttribPosition numberOfCoordinates:3 attribOffset:offsetof(SceneVertex, positionCoords) shouldEnable:YES];
     
-    // 5.设置指针
-    glVertexAttribPointer(// 当前的缓存包含每个顶点的位置信息
-                          GLKVertexAttribPosition,
-                          3,                   // 每个位置由三个部分
-                          GL_FLOAT,            // 每部分都保存为一个浮点类型的值
-                          GL_FALSE,            // 小数点固定数据是否可以被改变
-                          sizeof(SceneVertex), // 步幅:每个顶点保存多少字节
-                          NULL);      // 从当前绑定的顶点缓存开始位置访问顶点数据
+    [self.vertextBuffer prepareToDrawWithAttrib:GLKVertexAttribPosition numberOfCoordinates:2 attribOffset:offsetof(SceneVertex, textureCoords) shouldEnable:YES];
     
-    // 6.绘图
-    glDrawArrays(GL_TRIANGLES,
-                 0,
-                 3);
+    [self.vertextBuffer drawArrayWithMode:GL_TRIANGLES startVertexIndex:0 numberOfVertices:3];
 }
 
 -(void)viewDidUnload{
