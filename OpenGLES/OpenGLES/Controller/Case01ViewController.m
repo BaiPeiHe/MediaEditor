@@ -8,9 +8,6 @@
 
 #import "Case01ViewController.h"
 
-#import "GLKVertexAttribArrayBuffer.h"
-#import "AGLKContext.h"
-
 typedef struct {
     GLKVector3 positionCoords;
     GLKVector2 textureCoords;
@@ -18,9 +15,9 @@ typedef struct {
 
 static const SceneVertex vertices[] =
 {
-    {{-0.5f, -0.5f,0.0}, {0.0f,0.0f}},  // lower left corner
-    {{ 0.5f, -0.5f,0.0}, {1.0f,0.0f}},  // lower right corner
-    {{-0.5f,  0.5f,0.0}, {0.0f,1.0f}},  // upper left corner
+    {{-0.5f, -0.5f,0.0}},  // lower left corner
+    {{ 0.5f, -0.5f,0.0}},  // lower right corner
+    {{-0.5f,  0.5f,0.0}},  // upper left corner
 };
 
 @interface Case01ViewController ()
@@ -53,11 +50,10 @@ static const SceneVertex vertices[] =
                                                    1.0f); // alpha
     
     // 背景色
-    ((AGLKContext *)view.context).clearColor = GLKVector4Make(
-                                                              0.0f,
-                                                              0.0f,
-                                                              0.0f,
-                                                              1.0f);
+    glClearColor(0.0f,
+                 0.0f,
+                 0.0f,
+                 1.0f);
     // 1.为缓存生成唯一的标示
     glGenBuffers(1,
                  &vertexBufferID);
@@ -70,14 +66,6 @@ static const SceneVertex vertices[] =
                  vertices,         // 要复制的字节的地址
                  GL_STATIC_DRAW);  // 缓存在未来的运算中可能将会被怎么使用
     
-    
-    // 纹理
-    CGImageRef imageRef = [[UIImage imageNamed:@"leaves.gif"] CGImage];
-    
-    GLKTextureInfo *textureInfo = [GLKTextureLoader textureWithCGImage:imageRef options:nil error:NULL];
-    
-    self.baseEffect.texture2d0.name = textureInfo.name;
-    self.baseEffect.texture2d0.target = textureInfo.target;
 }
 
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect{

@@ -6,8 +6,17 @@
 //  Copyright © 2016年 白鹤. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
-@interface Case02ViewController : UIViewController
+#import "GLKVertexAttribArrayBuffer.h"
+#import "AGLKContext.h"
+
+@interface Case02ViewController : GLKViewController
+{
+    GLuint vertexBufferID;
+}
+
+@property (strong, nonatomic) GLKBaseEffect *baseEffect;
+
 
 @end
