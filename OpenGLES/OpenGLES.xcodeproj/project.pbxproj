@@ -11,6 +11,7 @@
 		E23070061E1108BF00EBBA66 /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = E23070051E1108BF00EBBA66 /* leaves.gif */; };
 		E230700D1E11157C00EBBA66 /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E230700C1E11157C00EBBA66 /* AGLKContext.m */; };
 		E23070101E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E230700F1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m */; };
+		E23070161E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23070151E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m */; };
 		E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */; };
 		E2B31FDA1E10D607001A9EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B31FD91E10D607001A9EEF /* AppDelegate.m */; };
 		E2B31FDE1E10D613001A9EEF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B31FDD1E10D613001A9EEF /* RootViewController.m */; };
@@ -47,6 +48,8 @@
 		E230700C1E11157C00EBBA66 /* AGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
 		E230700E1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
 		E230700F1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		E23070141E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		E23070151E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 		E275ED2A1E10D6D70075ABDE /* Case01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case01ViewController.h; sourceTree = "<group>"; };
 		E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case01ViewController.m; sourceTree = "<group>"; };
 		E275ED2D1E10D7010075ABDE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 		E230700A1E11155A00EBBA66 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				E23070141E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.h */,
+				E23070151E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m */,
 				E230700B1E11157C00EBBA66 /* AGLKContext.h */,
 				E230700C1E11157C00EBBA66 /* AGLKContext.m */,
 				E230700E1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.h */,
@@ -344,6 +349,7 @@
 				E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */,
 				E2DDB8E71E10D4DC00688190 /* main.m in Sources */,
 				E23070101E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m in Sources */,
+				E23070161E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m in Sources */,
 				E2B31FDE1E10D613001A9EEF /* RootViewController.m in Sources */,
 				E230700D1E11157C00EBBA66 /* AGLKContext.m in Sources */,
 				E23070021E10D84200EBBA66 /* Case02ViewController.m in Sources */,
