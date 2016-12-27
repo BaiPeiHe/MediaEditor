@@ -6,14 +6,14 @@
 //  Copyright © 2016年 白鹤. All rights reserved.
 //
 
-#import "Case03ViewController.h"
+#import "Case04ViewController.h"
 
 
-@interface Case03ViewController ()
+@interface Case04ViewController ()
 
 @end
 
-@implementation Case03ViewController
+@implementation Case04ViewController
 
 @synthesize baseEffect;
 @synthesize vertextBuffer;
@@ -70,15 +70,18 @@ static const SceneVertex vertices[] =
     
     self.textureInfo0 = [GLKTextureLoader textureWithCGImage:imageRef0 options:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],GLKTextureLoaderOriginBottomLeft, nil] error:NULL];
     
+    self.baseEffect.texture2d0.name = self.textureInfo0.name;
+    self.baseEffect.texture2d0.target = self.textureInfo0.target;
+    
     // 纹理1
     CGImageRef imageRef1 = [[UIImage imageNamed:@"beetle"] CGImage];
     
     self.textureInfo1 = [GLKTextureLoader textureWithCGImage:imageRef1 options:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],GLKTextureLoaderOriginBottomLeft, nil] error:nil];
     
-    // 设置混合模式
-    glEnable(GL_BLEND);
+    self.baseEffect.texture2d1.name = self.textureInfo1.name;
+    self.baseEffect.texture2d1.target = self.textureInfo1.target;
+    self.baseEffect.texture2d1.envMode = GLKTextureEnvModeDecal;
     
-    glBlendFunc(GL_SRC_COLOR, GL_SRC_ALPHA);
 }
 
 -(void)glkView:(GLKView *)view drawInRect:(CGRect)rect{
@@ -89,16 +92,8 @@ static const SceneVertex vertices[] =
     
     [self.vertextBuffer prepareToDrawWithAttrib:GLKVertexAttribTexCoord0 numberOfCoordinates:2 attribOffset:offsetof(SceneVertex, textureCoords) shouldEnable:YES];
     
-    // 绘制树叶
-    self.baseEffect.texture2d0.name = self.textureInfo0.name;
-    self.baseEffect.texture2d0.target = self.textureInfo0.target;
-    [self.baseEffect prepareToDraw];
+    [self.vertextBuffer prepareToDrawWithAttrib:GLKVertexAttribTexCoord1 numberOfCoordinates:2 attribOffset:offsetof(SceneVertex, textureCoords) shouldEnable:YES];
     
-    [self.vertextBuffer drawArrayWithMode:GL_TRIANGLES startVertexIndex:0 numberOfVertices:sizeof(vertices) / sizeof(SceneVertex)];
-    
-    // 绘制虫子
-    self.baseEffect.texture2d0.name = self.textureInfo1.name;
-    self.baseEffect.texture2d0.target = self.textureInfo1.target;
     [self.baseEffect prepareToDraw];
     
     [self.vertextBuffer drawArrayWithMode:GL_TRIANGLES startVertexIndex:0 numberOfVertices:sizeof(vertices) / sizeof(SceneVertex)];
