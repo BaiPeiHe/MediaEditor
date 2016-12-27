@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "Case01ViewController.h"
 #import "Case02ViewController.h"
+#import "Case03ViewController.h"
 
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>;
 
@@ -31,7 +32,7 @@
 
 - (void)createData{
     
-    self.titleArr = [NSMutableArray arrayWithObjects:@"绘制三角形",@"", nil];
+    self.titleArr = [NSMutableArray arrayWithObjects:@"绘制三角形",@"树叶合成到三角形上",@"", nil];
     
 }
 
@@ -75,6 +76,11 @@
         case 1:
             
             vc = [[Case02ViewController alloc] init];
+            
+            break;
+        case 2:
+            
+            vc = [[Case03ViewController alloc] init];
             
             break;
             
