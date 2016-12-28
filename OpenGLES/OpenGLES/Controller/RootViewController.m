@@ -11,6 +11,7 @@
 #import "Case02ViewController.h"
 #import "Case03ViewController.h"
 #import "Case04ViewController.h"
+#import "Case05ViewController.h"
 
 @interface RootViewController ()<UITableViewDelegate,UITableViewDataSource>;
 
@@ -33,7 +34,7 @@
 
 - (void)createData{
     
-    self.titleArr = [NSMutableArray arrayWithObjects:@"绘制三角形",@"树叶合成到三角形上",@"混合片元颜色",@"多重纹理", nil];
+    self.titleArr = [NSMutableArray arrayWithObjects:@"绘制三角形",@"树叶合成到三角形上",@"混合片元颜色",@"多重纹理",@"使用自定义 Shader", nil];
     
 }
 
@@ -88,6 +89,12 @@
         case 3:
             
             vc = [[Case04ViewController alloc] init];
+            
+            break;
+            
+        case 4:
+            
+            vc = [[Case05ViewController alloc] init];
             
             break;
             

@@ -54,6 +54,7 @@ static const SceneVertex vertices[] =
                                                               0.0f,
                                                               0.0f,
                                                               1.0f);
+    // 对 Case01 中的1,2,3的封装
     self.vertextBuffer = [[GLKVertexAttribArrayBuffer alloc] initWithAttribStride:sizeof(SceneVertex) numberOfVertices:sizeof(vertices) / sizeof(SceneVertex) data:vertices usage:GL_STATIC_DRAW];
     
     
@@ -71,6 +72,7 @@ static const SceneVertex vertices[] =
     
     [(AGLKContext *)view.context clear:GL_COLOR_BUFFER_BIT];
     
+    // 对 Case01 中的4,5,6的封装
     [self.vertextBuffer prepareToDrawWithAttrib:GLKVertexAttribPosition numberOfCoordinates:3 attribOffset:offsetof(SceneVertex, positionCoords) shouldEnable:YES];
     
     [self.vertextBuffer prepareToDrawWithAttrib:GLKVertexAttribTexCoord0 numberOfCoordinates:2 attribOffset:offsetof(SceneVertex, textureCoords) shouldEnable:YES];
