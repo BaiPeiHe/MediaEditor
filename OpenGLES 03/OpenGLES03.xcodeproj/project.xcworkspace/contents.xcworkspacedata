@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OpenGLES.xcodeproj">
+      location = "self:/Users/baihe/Code/OpenGLES/OpenGLES 03/OpenGLES03.xcodeproj">
    </FileRef>
 </Workspace>

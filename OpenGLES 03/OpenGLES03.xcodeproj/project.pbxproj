@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E23070021E10D84200EBBA66 /* Case02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23070011E10D84200EBBA66 /* Case02ViewController.m */; };
 		E23070061E1108BF00EBBA66 /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = E23070051E1108BF00EBBA66 /* leaves.gif */; };
 		E230700D1E11157C00EBBA66 /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E230700C1E11157C00EBBA66 /* AGLKContext.m */; };
 		E23070101E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E230700F1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m */; };
 		E23070161E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23070151E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m */; };
-		E23C8A811E1248CC00E31CB9 /* Case04ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C8A801E1248CC00E31CB9 /* Case04ViewController.m */; };
 		E23C8A991E13669E00E31CB9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E23C8A971E13669E00E31CB9 /* Shader.fsh */; };
 		E23C8A9A1E13669E00E31CB9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E23C8A981E13669E00E31CB9 /* Shader.vsh */; };
-		E23C8A9D1E1366EB00E31CB9 /* Case05ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C8A9C1E1366EB00E31CB9 /* Case05ViewController.m */; };
-		E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */; };
-		E28655441E120D120038337C /* Case03ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28655431E120D120038337C /* Case03ViewController.m */; };
+		E23C8AA01E14B0F000E31CB9 /* Case01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C8A9F1E14B0F000E31CB9 /* Case01ViewController.m */; };
 		E28655461E120DF90038337C /* beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = E28655451E120DF90038337C /* beetle.png */; };
 		E2B31FDA1E10D607001A9EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B31FD91E10D607001A9EEF /* AppDelegate.m */; };
 		E2B31FDE1E10D613001A9EEF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B31FDD1E10D613001A9EEF /* RootViewController.m */; };
@@ -47,8 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E23070001E10D84200EBBA66 /* Case02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case02ViewController.h; sourceTree = "<group>"; };
-		E23070011E10D84200EBBA66 /* Case02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case02ViewController.m; sourceTree = "<group>"; };
 		E23070051E1108BF00EBBA66 /* leaves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaves.gif; sourceTree = "<group>"; };
 		E230700B1E11157C00EBBA66 /* AGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKContext.h; sourceTree = "<group>"; };
 		E230700C1E11157C00EBBA66 /* AGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKContext.m; sourceTree = "<group>"; };
@@ -56,32 +50,26 @@
 		E230700F1E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 		E23070141E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
 		E23070151E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
-		E23C8A7F1E1248CC00E31CB9 /* Case04ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case04ViewController.h; sourceTree = "<group>"; };
-		E23C8A801E1248CC00E31CB9 /* Case04ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case04ViewController.m; sourceTree = "<group>"; };
 		E23C8A971E13669E00E31CB9 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
 		E23C8A981E13669E00E31CB9 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
-		E23C8A9B1E1366EB00E31CB9 /* Case05ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case05ViewController.h; sourceTree = "<group>"; };
-		E23C8A9C1E1366EB00E31CB9 /* Case05ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case05ViewController.m; sourceTree = "<group>"; };
-		E275ED2A1E10D6D70075ABDE /* Case01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case01ViewController.h; sourceTree = "<group>"; };
-		E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case01ViewController.m; sourceTree = "<group>"; };
+		E23C8A9E1E14B0F000E31CB9 /* Case01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case01ViewController.h; sourceTree = "<group>"; };
+		E23C8A9F1E14B0F000E31CB9 /* Case01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case01ViewController.m; sourceTree = "<group>"; };
 		E275ED2D1E10D7010075ABDE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		E28655421E120D120038337C /* Case03ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case03ViewController.h; sourceTree = "<group>"; };
-		E28655431E120D120038337C /* Case03ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case03ViewController.m; sourceTree = "<group>"; };
 		E28655451E120DF90038337C /* beetle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beetle.png; sourceTree = "<group>"; };
 		E2B31FD81E10D607001A9EEF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2B31FD91E10D607001A9EEF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E2B31FDC1E10D613001A9EEF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E2B31FDD1E10D613001A9EEF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		E2DDB8E21E10D4DC00688190 /* OpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DDB8E21E10D4DC00688190 /* OpenGLES03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLES03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DDB8E61E10D4DC00688190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2DDB8EF1E10D4DC00688190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2DDB8F11E10D4DC00688190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2DDB8F41E10D4DC00688190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2DDB8F61E10D4DC00688190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2DDB8FB1E10D4DC00688190 /* OpenGLESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLESTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DDB8FB1E10D4DC00688190 /* OpenGLES03Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLES03Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DDB8FF1E10D4DC00688190 /* OpenGLESTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESTests.m; sourceTree = "<group>"; };
 		E2DDB9011E10D4DC00688190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2DDB9061E10D4DC00688190 /* OpenGLESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DDB9061E10D4DC00688190 /* OpenGLES03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLES03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DDB90A1E10D4DC00688190 /* OpenGLESUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESUITests.m; sourceTree = "<group>"; };
 		E2DDB90C1E10D4DC00688190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,16 +156,8 @@
 			children = (
 				E2B31FDC1E10D613001A9EEF /* RootViewController.h */,
 				E2B31FDD1E10D613001A9EEF /* RootViewController.m */,
-				E275ED2A1E10D6D70075ABDE /* Case01ViewController.h */,
-				E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */,
-				E23070001E10D84200EBBA66 /* Case02ViewController.h */,
-				E23070011E10D84200EBBA66 /* Case02ViewController.m */,
-				E28655421E120D120038337C /* Case03ViewController.h */,
-				E28655431E120D120038337C /* Case03ViewController.m */,
-				E23C8A7F1E1248CC00E31CB9 /* Case04ViewController.h */,
-				E23C8A801E1248CC00E31CB9 /* Case04ViewController.m */,
-				E23C8A9B1E1366EB00E31CB9 /* Case05ViewController.h */,
-				E23C8A9C1E1366EB00E31CB9 /* Case05ViewController.m */,
+				E23C8A9E1E14B0F000E31CB9 /* Case01ViewController.h */,
+				E23C8A9F1E14B0F000E31CB9 /* Case01ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,9 +175,9 @@
 		E2DDB8E31E10D4DC00688190 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2DDB8E21E10D4DC00688190 /* OpenGLES.app */,
-				E2DDB8FB1E10D4DC00688190 /* OpenGLESTests.xctest */,
-				E2DDB9061E10D4DC00688190 /* OpenGLESUITests.xctest */,
+				E2DDB8E21E10D4DC00688190 /* OpenGLES03.app */,
+				E2DDB8FB1E10D4DC00688190 /* OpenGLES03Tests.xctest */,
+				E2DDB9061E10D4DC00688190 /* OpenGLES03UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2DDB8E11E10D4DC00688190 /* OpenGLES */ = {
+		E2DDB8E11E10D4DC00688190 /* OpenGLES03 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DDB90F1E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES" */;
+			buildConfigurationList = E2DDB90F1E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES03" */;
 			buildPhases = (
 				E2DDB8DE1E10D4DC00688190 /* Sources */,
 				E2DDB8DF1E10D4DC00688190 /* Frameworks */,
@@ -257,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = OpenGLES;
+			name = OpenGLES03;
 			productName = OpenGLES;
-			productReference = E2DDB8E21E10D4DC00688190 /* OpenGLES.app */;
+			productReference = E2DDB8E21E10D4DC00688190 /* OpenGLES03.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E2DDB8FA1E10D4DC00688190 /* OpenGLESTests */ = {
+		E2DDB8FA1E10D4DC00688190 /* OpenGLES03Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DDB9121E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLESTests" */;
+			buildConfigurationList = E2DDB9121E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES03Tests" */;
 			buildPhases = (
 				E2DDB8F71E10D4DC00688190 /* Sources */,
 				E2DDB8F81E10D4DC00688190 /* Frameworks */,
@@ -275,14 +255,14 @@
 			dependencies = (
 				E2DDB8FD1E10D4DC00688190 /* PBXTargetDependency */,
 			);
-			name = OpenGLESTests;
+			name = OpenGLES03Tests;
 			productName = OpenGLESTests;
-			productReference = E2DDB8FB1E10D4DC00688190 /* OpenGLESTests.xctest */;
+			productReference = E2DDB8FB1E10D4DC00688190 /* OpenGLES03Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E2DDB9051E10D4DC00688190 /* OpenGLESUITests */ = {
+		E2DDB9051E10D4DC00688190 /* OpenGLES03UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2DDB9151E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLESUITests" */;
+			buildConfigurationList = E2DDB9151E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES03UITests" */;
 			buildPhases = (
 				E2DDB9021E10D4DC00688190 /* Sources */,
 				E2DDB9031E10D4DC00688190 /* Frameworks */,
@@ -293,9 +273,9 @@
 			dependencies = (
 				E2DDB9081E10D4DC00688190 /* PBXTargetDependency */,
 			);
-			name = OpenGLESUITests;
+			name = OpenGLES03UITests;
 			productName = OpenGLESUITests;
-			productReference = E2DDB9061E10D4DC00688190 /* OpenGLESUITests.xctest */;
+			productReference = E2DDB9061E10D4DC00688190 /* OpenGLES03UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -324,7 +304,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E2DDB8DD1E10D4DB00688190 /* Build configuration list for PBXProject "OpenGLES" */;
+			buildConfigurationList = E2DDB8DD1E10D4DB00688190 /* Build configuration list for PBXProject "OpenGLES03" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -337,9 +317,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2DDB8E11E10D4DC00688190 /* OpenGLES */,
-				E2DDB8FA1E10D4DC00688190 /* OpenGLESTests */,
-				E2DDB9051E10D4DC00688190 /* OpenGLESUITests */,
+				E2DDB8E11E10D4DC00688190 /* OpenGLES03 */,
+				E2DDB8FA1E10D4DC00688190 /* OpenGLES03Tests */,
+				E2DDB9051E10D4DC00688190 /* OpenGLES03UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -381,16 +361,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B31FDA1E10D607001A9EEF /* AppDelegate.m in Sources */,
-				E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */,
 				E2DDB8E71E10D4DC00688190 /* main.m in Sources */,
 				E23070101E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m in Sources */,
 				E23070161E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m in Sources */,
-				E23C8A9D1E1366EB00E31CB9 /* Case05ViewController.m in Sources */,
+				E23C8AA01E14B0F000E31CB9 /* Case01ViewController.m in Sources */,
 				E2B31FDE1E10D613001A9EEF /* RootViewController.m in Sources */,
-				E28655441E120D120038337C /* Case03ViewController.m in Sources */,
 				E230700D1E11157C00EBBA66 /* AGLKContext.m in Sources */,
-				E23070021E10D84200EBBA66 /* Case02ViewController.m in Sources */,
-				E23C8A811E1248CC00E31CB9 /* Case04ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,12 +391,12 @@
 /* Begin PBXTargetDependency section */
 		E2DDB8FD1E10D4DC00688190 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E2DDB8E11E10D4DC00688190 /* OpenGLES */;
+			target = E2DDB8E11E10D4DC00688190 /* OpenGLES03 */;
 			targetProxy = E2DDB8FC1E10D4DC00688190 /* PBXContainerItemProxy */;
 		};
 		E2DDB9081E10D4DC00688190 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E2DDB8E11E10D4DC00688190 /* OpenGLES */;
+			target = E2DDB8E11E10D4DC00688190 /* OpenGLES03 */;
 			targetProxy = E2DDB9071E10D4DC00688190 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -569,7 +545,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BaiHe.OpenGLESTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLES.app/OpenGLES";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLES03.app/OpenGLES03";
 			};
 			name = Debug;
 		};
@@ -581,7 +557,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BaiHe.OpenGLESTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLES.app/OpenGLES";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLES03.app/OpenGLES03";
 			};
 			name = Release;
 		};
@@ -610,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2DDB8DD1E10D4DB00688190 /* Build configuration list for PBXProject "OpenGLES" */ = {
+		E2DDB8DD1E10D4DB00688190 /* Build configuration list for PBXProject "OpenGLES03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DDB90D1E10D4DC00688190 /* Debug */,
@@ -619,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DDB90F1E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES" */ = {
+		E2DDB90F1E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DDB9101E10D4DC00688190 /* Debug */,
@@ -628,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DDB9121E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLESTests" */ = {
+		E2DDB9121E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES03Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DDB9131E10D4DC00688190 /* Debug */,
@@ -637,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2DDB9151E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLESUITests" */ = {
+		E2DDB9151E10D4DC00688190 /* Build configuration list for PBXNativeTarget "OpenGLES03UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2DDB9161E10D4DC00688190 /* Debug */,
