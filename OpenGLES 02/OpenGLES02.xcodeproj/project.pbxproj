@@ -15,7 +15,10 @@
 		E23C8A811E1248CC00E31CB9 /* Case04ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C8A801E1248CC00E31CB9 /* Case04ViewController.m */; };
 		E23C8A991E13669E00E31CB9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E23C8A971E13669E00E31CB9 /* Shader.fsh */; };
 		E23C8A9A1E13669E00E31CB9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E23C8A981E13669E00E31CB9 /* Shader.vsh */; };
-		E23C8A9D1E1366EB00E31CB9 /* Case05ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C8A9C1E1366EB00E31CB9 /* Case05ViewController.m */; };
+		E2562D4C1E164C2000D754CB /* Case06ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2562D4B1E164C2000D754CB /* Case06ViewController.m */; };
+		E26B038D1E1D078700639CD2 /* Shader2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E26B038B1E1D078700639CD2 /* Shader2.fsh */; };
+		E26B038E1E1D078700639CD2 /* Shader2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E26B038C1E1D078700639CD2 /* Shader2.vsh */; };
+		E26B03941E1DF03100639CD2 /* CameraGLESView.m in Sources */ = {isa = PBXBuildFile; fileRef = E26B03931E1DF03100639CD2 /* CameraGLESView.m */; };
 		E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */; };
 		E28655441E120D120038337C /* Case03ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28655431E120D120038337C /* Case03ViewController.m */; };
 		E28655461E120DF90038337C /* beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = E28655451E120DF90038337C /* beetle.png */; };
@@ -60,8 +63,12 @@
 		E23C8A801E1248CC00E31CB9 /* Case04ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case04ViewController.m; sourceTree = "<group>"; };
 		E23C8A971E13669E00E31CB9 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
 		E23C8A981E13669E00E31CB9 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
-		E23C8A9B1E1366EB00E31CB9 /* Case05ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case05ViewController.h; sourceTree = "<group>"; };
-		E23C8A9C1E1366EB00E31CB9 /* Case05ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case05ViewController.m; sourceTree = "<group>"; };
+		E2562D4A1E164C2000D754CB /* Case06ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case06ViewController.h; sourceTree = "<group>"; };
+		E2562D4B1E164C2000D754CB /* Case06ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case06ViewController.m; sourceTree = "<group>"; };
+		E26B038B1E1D078700639CD2 /* Shader2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader2.fsh; sourceTree = "<group>"; };
+		E26B038C1E1D078700639CD2 /* Shader2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader2.vsh; sourceTree = "<group>"; };
+		E26B03921E1DF03100639CD2 /* CameraGLESView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraGLESView.h; sourceTree = "<group>"; };
+		E26B03931E1DF03100639CD2 /* CameraGLESView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraGLESView.m; sourceTree = "<group>"; };
 		E275ED2A1E10D6D70075ABDE /* Case01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case01ViewController.h; sourceTree = "<group>"; };
 		E275ED2B1E10D6D70075ABDE /* Case01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case01ViewController.m; sourceTree = "<group>"; };
 		E275ED2D1E10D7010075ABDE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -123,6 +130,8 @@
 		E230700A1E11155A00EBBA66 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				E26B03921E1DF03100639CD2 /* CameraGLESView.h */,
+				E26B03931E1DF03100639CD2 /* CameraGLESView.m */,
 				E23070141E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.h */,
 				E23070151E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m */,
 				E230700B1E11157C00EBBA66 /* AGLKContext.h */,
@@ -138,6 +147,8 @@
 			children = (
 				E23C8A971E13669E00E31CB9 /* Shader.fsh */,
 				E23C8A981E13669E00E31CB9 /* Shader.vsh */,
+				E26B038B1E1D078700639CD2 /* Shader2.fsh */,
+				E26B038C1E1D078700639CD2 /* Shader2.vsh */,
 			);
 			path = Shader;
 			sourceTree = "<group>";
@@ -176,8 +187,8 @@
 				E28655431E120D120038337C /* Case03ViewController.m */,
 				E23C8A7F1E1248CC00E31CB9 /* Case04ViewController.h */,
 				E23C8A801E1248CC00E31CB9 /* Case04ViewController.m */,
-				E23C8A9B1E1366EB00E31CB9 /* Case05ViewController.h */,
-				E23C8A9C1E1366EB00E31CB9 /* Case05ViewController.m */,
+				E2562D4A1E164C2000D754CB /* Case06ViewController.h */,
+				E2562D4B1E164C2000D754CB /* Case06ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -349,9 +360,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26B038E1E1D078700639CD2 /* Shader2.vsh in Resources */,
 				E23C8A991E13669E00E31CB9 /* Shader.fsh in Resources */,
 				E23C8A9A1E13669E00E31CB9 /* Shader.vsh in Resources */,
 				E2DDB8F51E10D4DC00688190 /* LaunchScreen.storyboard in Resources */,
+				E26B038D1E1D078700639CD2 /* Shader2.fsh in Resources */,
 				E2DDB8F21E10D4DC00688190 /* Assets.xcassets in Resources */,
 				E23070061E1108BF00EBBA66 /* leaves.gif in Resources */,
 				E2DDB8F01E10D4DC00688190 /* Main.storyboard in Resources */,
@@ -384,10 +397,11 @@
 				E275ED2C1E10D6D70075ABDE /* Case01ViewController.m in Sources */,
 				E2DDB8E71E10D4DC00688190 /* main.m in Sources */,
 				E23070101E11178800EBBA66 /* GLKVertexAttribArrayBuffer.m in Sources */,
+				E2562D4C1E164C2000D754CB /* Case06ViewController.m in Sources */,
 				E23070161E11315600EBBA66 /* AGLKVertexAttribArrayBuffer.m in Sources */,
-				E23C8A9D1E1366EB00E31CB9 /* Case05ViewController.m in Sources */,
 				E2B31FDE1E10D613001A9EEF /* RootViewController.m in Sources */,
 				E28655441E120D120038337C /* Case03ViewController.m in Sources */,
+				E26B03941E1DF03100639CD2 /* CameraGLESView.m in Sources */,
 				E230700D1E11157C00EBBA66 /* AGLKContext.m in Sources */,
 				E23070021E10D84200EBBA66 /* Case02ViewController.m in Sources */,
 				E23C8A811E1248CC00E31CB9 /* Case04ViewController.m in Sources */,

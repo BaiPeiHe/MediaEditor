@@ -18,7 +18,7 @@ typedef struct {
 // Initialize the program object
 //
 
-int Init ( ESContext *esContext){
+int Init ( ESContext *esContext ){
     
     UserData *userData = esContext->userData;
     const char vShaderStr[] =
