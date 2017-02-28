@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2CE58511E65566A005200EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE58501E65566A005200EC /* main.m */; };
+		E2CE585A1E65566A005200EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CE58581E65566A005200EC /* Main.storyboard */; };
+		E2CE585C1E65566A005200EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CE585B1E65566A005200EC /* Assets.xcassets */; };
+		E2CE585F1E65566A005200EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CE585D1E65566A005200EC /* LaunchScreen.storyboard */; };
+		E2CE586A1E65566A005200EC /* FFmpeg_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE58691E65566A005200EC /* FFmpeg_01Tests.m */; };
+		E2CE58751E65566A005200EC /* FFmpeg_01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE58741E65566A005200EC /* FFmpeg_01UITests.m */; };
+		E2CE58861E6556B9005200EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE58841E6556B9005200EC /* AppDelegate.m */; };
+		E2CE588C1E655725005200EC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE588B1E655725005200EC /* RootViewController.m */; };
+		E2CE58951E655E3B005200EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE588E1E655C1D005200EC /* AVFoundation.framework */; };
+		E2CE58961E655E55005200EC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE58901E655C28005200EC /* libz.tbd */; };
+		E2CE58A11E655EFA005200EC /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE58971E655EFA005200EC /* libavcodec.a */; };
+		E2CE58A21E655EFA005200EC /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE58981E655EFA005200EC /* libavdevice.a */; };
+		E2CE58A31E655EFA005200EC /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE58991E655EFA005200EC /* libavfilter.a */; };
+		E2CE58A41E655EFA005200EC /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589A1E655EFA005200EC /* libavformat.a */; };
+		E2CE58A51E655EFA005200EC /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589B1E655EFA005200EC /* libavutil.a */; };
+		E2CE58A61E655EFA005200EC /* libfaac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589C1E655EFA005200EC /* libfaac.a */; };
+		E2CE58A71E655EFA005200EC /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589D1E655EFA005200EC /* libpostproc.a */; };
+		E2CE58A81E655EFA005200EC /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589E1E655EFA005200EC /* libswresample.a */; };
+		E2CE58A91E655EFA005200EC /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589F1E655EFA005200EC /* libswscale.a */; };
+		E2CE58AA1E655EFA005200EC /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE58A01E655EFA005200EC /* libx264.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2CE58661E65566A005200EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2CE58441E65566A005200EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CE584B1E65566A005200EC;
+			remoteInfo = "FFmpeg-01";
+		};
+		E2CE58711E65566A005200EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2CE58441E65566A005200EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2CE584B1E65566A005200EC;
+			remoteInfo = "FFmpeg-01";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2CE584C1E65566A005200EC /* FFmpeg-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFmpeg-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CE58501E65566A005200EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2CE58591E65566A005200EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2CE585B1E65566A005200EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2CE585E1E65566A005200EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2CE58601E65566A005200EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CE58651E65566A005200EC /* FFmpeg-01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFmpeg-01Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CE58691E65566A005200EC /* FFmpeg_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFmpeg_01Tests.m; sourceTree = "<group>"; };
+		E2CE586B1E65566A005200EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CE58701E65566A005200EC /* FFmpeg-01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFmpeg-01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2CE58741E65566A005200EC /* FFmpeg_01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFmpeg_01UITests.m; sourceTree = "<group>"; };
+		E2CE58761E65566A005200EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2CE58831E6556B9005200EC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2CE58841E6556B9005200EC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2CE588A1E655725005200EC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E2CE588B1E655725005200EC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E2CE588E1E655C1D005200EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E2CE58901E655C28005200EC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E2CE58971E655EFA005200EC /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = FFmpegPackage/libavcodec.a; sourceTree = "<group>"; };
+		E2CE58981E655EFA005200EC /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = FFmpegPackage/libavdevice.a; sourceTree = "<group>"; };
+		E2CE58991E655EFA005200EC /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = FFmpegPackage/libavfilter.a; sourceTree = "<group>"; };
+		E2CE589A1E655EFA005200EC /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = FFmpegPackage/libavformat.a; sourceTree = "<group>"; };
+		E2CE589B1E655EFA005200EC /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = FFmpegPackage/libavutil.a; sourceTree = "<group>"; };
+		E2CE589C1E655EFA005200EC /* libfaac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfaac.a; path = FFmpegPackage/libfaac.a; sourceTree = "<group>"; };
+		E2CE589D1E655EFA005200EC /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = FFmpegPackage/libpostproc.a; sourceTree = "<group>"; };
+		E2CE589E1E655EFA005200EC /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = FFmpegPackage/libswresample.a; sourceTree = "<group>"; };
+		E2CE589F1E655EFA005200EC /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = FFmpegPackage/libswscale.a; sourceTree = "<group>"; };
+		E2CE58A01E655EFA005200EC /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = FFmpegPackage/libx264.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2CE58621E65566A005200EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CE586D1E65566A005200EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CE58941E655E28005200EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CE58A61E655EFA005200EC /* libfaac.a in Frameworks */,
+				E2CE58A11E655EFA005200EC /* libavcodec.a in Frameworks */,
+				E2CE58A21E655EFA005200EC /* libavdevice.a in Frameworks */,
+				E2CE58A31E655EFA005200EC /* libavfilter.a in Frameworks */,
+				E2CE58A41E655EFA005200EC /* libavformat.a in Frameworks */,
+				E2CE58A51E655EFA005200EC /* libavutil.a in Frameworks */,
+				E2CE58A71E655EFA005200EC /* libpostproc.a in Frameworks */,
+				E2CE58A81E655EFA005200EC /* libswresample.a in Frameworks */,
+				E2CE58A91E655EFA005200EC /* libswscale.a in Frameworks */,
+				E2CE58AA1E655EFA005200EC /* libx264.a in Frameworks */,
+				E2CE58961E655E55005200EC /* libz.tbd in Frameworks */,
+				E2CE58951E655E3B005200EC /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2CE58431E65566A005200EC = {
+			isa = PBXGroup;
+			children = (
+				E2CE584E1E65566A005200EC /* FFmpeg-01 */,
+				E2CE58681E65566A005200EC /* FFmpeg-01Tests */,
+				E2CE58731E65566A005200EC /* FFmpeg-01UITests */,
+				E2CE584D1E65566A005200EC /* Products */,
+				E2CE588D1E655C1C005200EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2CE584D1E65566A005200EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE584C1E65566A005200EC /* FFmpeg-01.app */,
+				E2CE58651E65566A005200EC /* FFmpeg-01Tests.xctest */,
+				E2CE58701E65566A005200EC /* FFmpeg-01UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2CE584E1E65566A005200EC /* FFmpeg-01 */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58821E6556B9005200EC /* Application */,
+				E2CE58851E6556B9005200EC /* Code */,
+				E2CE58871E6556C1005200EC /* Others */,
+				E2CE584F1E65566A005200EC /* Supporting Files */,
+			);
+			path = "FFmpeg-01";
+			sourceTree = "<group>";
+		};
+		E2CE584F1E65566A005200EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58501E65566A005200EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2CE58681E65566A005200EC /* FFmpeg-01Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58691E65566A005200EC /* FFmpeg_01Tests.m */,
+				E2CE586B1E65566A005200EC /* Info.plist */,
+			);
+			path = "FFmpeg-01Tests";
+			sourceTree = "<group>";
+		};
+		E2CE58731E65566A005200EC /* FFmpeg-01UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58741E65566A005200EC /* FFmpeg_01UITests.m */,
+				E2CE58761E65566A005200EC /* Info.plist */,
+			);
+			path = "FFmpeg-01UITests";
+			sourceTree = "<group>";
+		};
+		E2CE58821E6556B9005200EC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58831E6556B9005200EC /* AppDelegate.h */,
+				E2CE58841E6556B9005200EC /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E2CE58851E6556B9005200EC /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58881E6556F1005200EC /* Controller */,
+				E2CE58891E6556F1005200EC /* View */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		E2CE58871E6556C1005200EC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58581E65566A005200EC /* Main.storyboard */,
+				E2CE585B1E65566A005200EC /* Assets.xcassets */,
+				E2CE585D1E65566A005200EC /* LaunchScreen.storyboard */,
+				E2CE58601E65566A005200EC /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		E2CE58881E6556F1005200EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE588A1E655725005200EC /* RootViewController.h */,
+				E2CE588B1E655725005200EC /* RootViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2CE58891E6556F1005200EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2CE588D1E655C1C005200EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2CE58971E655EFA005200EC /* libavcodec.a */,
+				E2CE58981E655EFA005200EC /* libavdevice.a */,
+				E2CE58991E655EFA005200EC /* libavfilter.a */,
+				E2CE589A1E655EFA005200EC /* libavformat.a */,
+				E2CE589B1E655EFA005200EC /* libavutil.a */,
+				E2CE589C1E655EFA005200EC /* libfaac.a */,
+				E2CE589D1E655EFA005200EC /* libpostproc.a */,
+				E2CE589E1E655EFA005200EC /* libswresample.a */,
+				E2CE589F1E655EFA005200EC /* libswscale.a */,
+				E2CE58A01E655EFA005200EC /* libx264.a */,
+				E2CE58901E655C28005200EC /* libz.tbd */,
+				E2CE588E1E655C1D005200EC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2CE584B1E65566A005200EC /* FFmpeg-01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CE58791E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01" */;
+			buildPhases = (
+				E2CE58481E65566A005200EC /* Sources */,
+				E2CE584A1E65566A005200EC /* Resources */,
+				E2CE58941E655E28005200EC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FFmpeg-01";
+			productName = "FFmpeg-01";
+			productReference = E2CE584C1E65566A005200EC /* FFmpeg-01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2CE58641E65566A005200EC /* FFmpeg-01Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CE587C1E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01Tests" */;
+			buildPhases = (
+				E2CE58611E65566A005200EC /* Sources */,
+				E2CE58621E65566A005200EC /* Frameworks */,
+				E2CE58631E65566A005200EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CE58671E65566A005200EC /* PBXTargetDependency */,
+			);
+			name = "FFmpeg-01Tests";
+			productName = "FFmpeg-01Tests";
+			productReference = E2CE58651E65566A005200EC /* FFmpeg-01Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2CE586F1E65566A005200EC /* FFmpeg-01UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CE587F1E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01UITests" */;
+			buildPhases = (
+				E2CE586C1E65566A005200EC /* Sources */,
+				E2CE586D1E65566A005200EC /* Frameworks */,
+				E2CE586E1E65566A005200EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2CE58721E65566A005200EC /* PBXTargetDependency */,
+			);
+			name = "FFmpeg-01UITests";
+			productName = "FFmpeg-01UITests";
+			productReference = E2CE58701E65566A005200EC /* FFmpeg-01UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2CE58441E65566A005200EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "白鹤";
+				TargetAttributes = {
+					E2CE584B1E65566A005200EC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U2MU5L2D88;
+						ProvisioningStyle = Automatic;
+					};
+					E2CE58641E65566A005200EC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2CE584B1E65566A005200EC;
+					};
+					E2CE586F1E65566A005200EC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2CE584B1E65566A005200EC;
+					};
+				};
+			};
+			buildConfigurationList = E2CE58471E65566A005200EC /* Build configuration list for PBXProject "FFmpeg-01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2CE58431E65566A005200EC;
+			productRefGroup = E2CE584D1E65566A005200EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2CE584B1E65566A005200EC /* FFmpeg-01 */,
+				E2CE58641E65566A005200EC /* FFmpeg-01Tests */,
+				E2CE586F1E65566A005200EC /* FFmpeg-01UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2CE584A1E65566A005200EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CE585F1E65566A005200EC /* LaunchScreen.storyboard in Resources */,
+				E2CE585C1E65566A005200EC /* Assets.xcassets in Resources */,
+				E2CE585A1E65566A005200EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CE58631E65566A005200EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CE586E1E65566A005200EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2CE58481E65566A005200EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CE58861E6556B9005200EC /* AppDelegate.m in Sources */,
+				E2CE58511E65566A005200EC /* main.m in Sources */,
+				E2CE588C1E655725005200EC /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CE58611E65566A005200EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CE586A1E65566A005200EC /* FFmpeg_01Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CE586C1E65566A005200EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CE58751E65566A005200EC /* FFmpeg_01UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2CE58671E65566A005200EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2CE584B1E65566A005200EC /* FFmpeg-01 */;
+			targetProxy = E2CE58661E65566A005200EC /* PBXContainerItemProxy */;
+		};
+		E2CE58721E65566A005200EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2CE584B1E65566A005200EC /* FFmpeg-01 */;
+			targetProxy = E2CE58711E65566A005200EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2CE58581E65566A005200EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CE58591E65566A005200EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2CE585D1E65566A005200EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2CE585E1E65566A005200EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2CE58771E65566A005200EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E2CE58781E65566A005200EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2CE587A1E65566A005200EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2MU5L2D88;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FFmpegPackage",
+					"$(PROJECT_DIR)/FFmpegPackage/include",
+				);
+				INFOPLIST_FILE = "FFmpeg-01/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpegPackage",
+				);
+				OTHER_LDFLAGS = (
+					"-lfaac",
+					"-lx264",
+					"-lswscale",
+					"-lswresample",
+					"-lpostproc",
+					"-lavfilter",
+					"-lavdevice",
+					"-lavutil",
+					"-lavcodec",
+					"-lavformat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BaiHe.FFmpeg-01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2CE587B1E65566A005200EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2MU5L2D88;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/FFmpegPackage",
+					"$(PROJECT_DIR)/FFmpegPackage/include",
+				);
+				INFOPLIST_FILE = "FFmpeg-01/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpegPackage",
+				);
+				OTHER_LDFLAGS = (
+					"-lfaac",
+					"-lx264",
+					"-lswscale",
+					"-lswresample",
+					"-lpostproc",
+					"-lavfilter",
+					"-lavdevice",
+					"-lavutil",
+					"-lavcodec",
+					"-lavformat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BaiHe.FFmpeg-01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2CE587D1E65566A005200EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "FFmpeg-01Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BaiHe.FFmpeg-01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFmpeg-01.app/FFmpeg-01";
+			};
+			name = Debug;
+		};
+		E2CE587E1E65566A005200EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "FFmpeg-01Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BaiHe.FFmpeg-01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFmpeg-01.app/FFmpeg-01";
+			};
+			name = Release;
+		};
+		E2CE58801E65566A005200EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FFmpeg-01UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BaiHe.FFmpeg-01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "FFmpeg-01";
+			};
+			name = Debug;
+		};
+		E2CE58811E65566A005200EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FFmpeg-01UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BaiHe.FFmpeg-01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "FFmpeg-01";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2CE58471E65566A005200EC /* Build configuration list for PBXProject "FFmpeg-01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CE58771E65566A005200EC /* Debug */,
+				E2CE58781E65566A005200EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2CE58791E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CE587A1E65566A005200EC /* Debug */,
+				E2CE587B1E65566A005200EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2CE587C1E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CE587D1E65566A005200EC /* Debug */,
+				E2CE587E1E65566A005200EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2CE587F1E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CE58801E65566A005200EC /* Debug */,
+				E2CE58811E65566A005200EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2CE58441E65566A005200EC /* Project object */;
+}
