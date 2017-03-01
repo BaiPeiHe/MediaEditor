@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22572961E66797A00454550 /* nwn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22572951E66797A00454550 /* nwn.mp4 */; };
 		E2CE58511E65566A005200EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE58501E65566A005200EC /* main.m */; };
 		E2CE585A1E65566A005200EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CE58581E65566A005200EC /* Main.storyboard */; };
 		E2CE585C1E65566A005200EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CE585B1E65566A005200EC /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E22572951E66797A00454550 /* nwn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nwn.mp4; sourceTree = "<group>"; };
 		E2CE584C1E65566A005200EC /* FFmpeg-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFmpeg-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CE58501E65566A005200EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2CE58591E65566A005200EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22572941E66793700454550 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E22572951E66797A00454550 /* nwn.mp4 */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		E2CE58431E65566A005200EC = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 		E2CE584E1E65566A005200EC /* FFmpeg-01 */ = {
 			isa = PBXGroup;
 			children = (
+				E22572941E66793700454550 /* Sources */,
 				E2CE58821E6556B9005200EC /* Application */,
 				E2CE58851E6556B9005200EC /* Code */,
 				E2CE58871E6556C1005200EC /* Others */,
@@ -344,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2CE585F1E65566A005200EC /* LaunchScreen.storyboard in Resources */,
+				E22572961E66797A00454550 /* nwn.mp4 in Resources */,
 				E2CE585C1E65566A005200EC /* Assets.xcassets in Resources */,
 				E2CE585A1E65566A005200EC /* Main.storyboard in Resources */,
 			);
@@ -648,6 +660,7 @@
 				E2CE587B1E65566A005200EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2CE587C1E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01Tests" */ = {
 			isa = XCConfigurationList;
@@ -656,6 +669,7 @@
 				E2CE587E1E65566A005200EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2CE587F1E65566A005200EC /* Build configuration list for PBXNativeTarget "FFmpeg-01UITests" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +678,7 @@
 				E2CE58811E65566A005200EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
