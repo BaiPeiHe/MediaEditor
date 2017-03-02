@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E22572961E66797A00454550 /* nwn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22572951E66797A00454550 /* nwn.mp4 */; };
+		E279EFCD1E66CE63002431A7 /* OpenGLView20.m in Sources */ = {isa = PBXBuildFile; fileRef = E279EFCC1E66CE63002431A7 /* OpenGLView20.m */; };
 		E2CE58511E65566A005200EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE58501E65566A005200EC /* main.m */; };
 		E2CE585A1E65566A005200EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CE58581E65566A005200EC /* Main.storyboard */; };
 		E2CE585C1E65566A005200EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CE585B1E65566A005200EC /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		E2CE58A81E655EFA005200EC /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589E1E655EFA005200EC /* libswresample.a */; };
 		E2CE58A91E655EFA005200EC /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE589F1E655EFA005200EC /* libswscale.a */; };
 		E2CE58AA1E655EFA005200EC /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CE58A01E655EFA005200EC /* libx264.a */; };
+		E2EB03A41E67B27B00745D40 /* nwn1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E2EB03A31E67B27B00745D40 /* nwn1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		E22572951E66797A00454550 /* nwn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nwn.mp4; sourceTree = "<group>"; };
+		E279EFCB1E66CE63002431A7 /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
+		E279EFCC1E66CE63002431A7 /* OpenGLView20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView20.m; sourceTree = "<group>"; };
 		E2CE584C1E65566A005200EC /* FFmpeg-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFmpeg-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CE58501E65566A005200EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2CE58591E65566A005200EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		E2CE589E1E655EFA005200EC /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = FFmpegPackage/libswresample.a; sourceTree = "<group>"; };
 		E2CE589F1E655EFA005200EC /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = FFmpegPackage/libswscale.a; sourceTree = "<group>"; };
 		E2CE58A01E655EFA005200EC /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = FFmpegPackage/libx264.a; sourceTree = "<group>"; };
+		E2EB03A31E67B27B00745D40 /* nwn1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nwn1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 		E22572941E66793700454550 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E2EB03A31E67B27B00745D40 /* nwn1.mp4 */,
 				E22572951E66797A00454550 /* nwn.mp4 */,
 			);
 			path = Sources;
@@ -224,6 +230,8 @@
 		E2CE58891E6556F1005200EC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E279EFCB1E66CE63002431A7 /* OpenGLView20.h */,
+				E279EFCC1E66CE63002431A7 /* OpenGLView20.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +365,7 @@
 				E2CE585F1E65566A005200EC /* LaunchScreen.storyboard in Resources */,
 				E22572961E66797A00454550 /* nwn.mp4 in Resources */,
 				E2CE585C1E65566A005200EC /* Assets.xcassets in Resources */,
+				E2EB03A41E67B27B00745D40 /* nwn1.mp4 in Resources */,
 				E2CE585A1E65566A005200EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +394,7 @@
 				E2CE58861E6556B9005200EC /* AppDelegate.m in Sources */,
 				E2CE58511E65566A005200EC /* main.m in Sources */,
 				E2CE588C1E655725005200EC /* RootViewController.m in Sources */,
+				E279EFCD1E66CE63002431A7 /* OpenGLView20.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

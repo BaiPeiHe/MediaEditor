@@ -10,6 +10,9 @@
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 #import "RootViewController.h"
+
+#import "OpenGLView20.h"
+
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
@@ -19,7 +22,9 @@
 @end
 
 @implementation RootViewController
-
+{
+    OpenGLView20 *playView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -39,6 +44,129 @@
     [decodeBtn setTitle:@"解码" forState:(UIControlStateNormal)];
     [decodeBtn addTarget:self action:@selector(clickDecodeAction) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:decodeBtn];
+    
+    UIButton *playBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [playBtn setTitleColor:[UIColor brownColor] forState:(UIControlStateNormal)];
+    playBtn.frame = CGRectMake(SCREEN_WIDTH / 4 * 2, 64, 100, 30);
+    [playBtn setTitle:@"播放" forState:(UIControlStateNormal)];
+    [playBtn addTarget:self action:@selector(clickPlayAction) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:playBtn];
+    
+    playView = [[OpenGLView20 alloc] initWithFrame:CGRectMake(20, 100, SCREEN_WIDTH - 40, SCREEN_HEIGHT - 101)];
+    playView.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:playView];
+    
+    
+}
+
+- (void)clickPlayAction{
+    NSLog(@"播放");
+    
+    AVFormatContext *pFormatCtx;
+    int             videoIndex;
+    AVCodecContext  *pCodecCtx;
+    AVCodec         *pCodec;
+    
+    NSString *input = [[NSBundle mainBundle]pathForResource:@"nwn1" ofType:@"mp4"];
+    const char *filePath = [input UTF8String];
+    
+    av_register_all();
+    avformat_network_init();
+    pFormatCtx = avformat_alloc_context();
+    if(avformat_open_input(&pFormatCtx, filePath, NULL, NULL) != 0){
+        printf("Couldn't open input steam.\n");
+        exit(1);
+    }
+    
+    if(avformat_find_stream_info(pFormatCtx, NULL) < 0){
+        printf("Couldn't find stram information.\n");
+        exit(1);
+    }
+    
+    videoIndex = -1;
+    for(int i = 0; i < pFormatCtx->nb_streams; i++){
+        if(pFormatCtx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO){
+            videoIndex = i;
+            break;
+        }
+    }
+    
+    if(videoIndex == -1){
+        printf("Didn't find a video stream.\n");
+        exit(1);
+    }
+    
+    pCodecCtx = pFormatCtx->streams[videoIndex]->codec;
+    pCodec = avcodec_find_decoder(pCodecCtx->codec_id);
+    if(pCodec == NULL){
+        printf("Codec not found.\n");
+        exit(1);
+    }
+    
+    if(avcodec_open2(pCodecCtx, pCodec, NULL) < 0){
+        printf("Could not open codec.\n");
+        exit(1);
+    }
+    
+    AVFrame *pFrame, *pFrameYUV;
+    pFrame = av_frame_alloc();
+    pFrameYUV = av_frame_alloc();
+    uint8_t *out_buffer = (uint8_t *)av_malloc(avpicture_get_size(PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height));
+    avpicture_fill((AVPicture *)pFrameYUV, out_buffer, PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height);
+    
+    int ret, got_picture;
+    int y_size = pCodecCtx->width * pCodecCtx->height;
+    
+    AVPacket *packet = (AVPacket *)av_malloc(sizeof(AVPacket));
+    av_new_packet(packet, y_size);
+    
+    printf("video infomatoin:\n");
+    av_dump_format(pFormatCtx, 0, filePath, 0);
+    
+    while (av_read_frame(pFormatCtx, packet) >= 0) {
+        if(packet->stream_index == videoIndex){
+            ret = avcodec_decode_video2(pCodecCtx, pFrame, &got_picture, packet);
+            if(ret < 0){
+                printf("Decode Error.\n");
+                exit(1);
+            }
+            
+            if(got_picture){
+                char *buf = (char*)malloc(pFrame->width * pFrame->height * 3 / 2);
+                
+                AVPicture *pict;
+                int  w, h;
+                char *y, *u, *v;
+                pict = (AVPicture *)pFrame;// 这里的 frame 就是解码出来的 AVFrame
+                w = pFrame->width;
+                h = pFrame->height;
+                y = buf;
+                u = y + w * h;
+                v = u + w * h / 4;
+                
+                for(int i = 0; i < h; i++){
+                    memcpy(y + w * i, pict->data[0] + pict->linesize[0] * i, w);
+                }
+                
+                for(int i = 0; i < h / 2; i++){
+                    memcpy(u + w / 2 * i, pict->data[1] + pict->linesize[1] * i, w / 2);
+                }
+                for(int i = 0; i < h / 2; i++){
+                    memcpy(v + w / 2 * i, pict->data[2] + pict->linesize[2] * i, w / 2);
+                }
+                
+                [playView setVideoSize:pFrame->width height:pFrame->height];
+                [playView displayYUV420pData:buf width:pFrame->width height:pFrame->height];
+                free(buf);
+            
+            }
+        }
+        av_free_packet(packet);
+    }
+    
+    av_free(pFrameYUV);
+    avcodec_close(pCodecCtx);
+    avformat_close_input(&pFormatCtx);
     
 }
 
@@ -151,6 +279,7 @@
             if(got_picture){
                 sws_scale(img_convert_ctx, (const uint8_t* const*)pFrame->data, pFrame->linesize, 0, pCodecCtx->height, pFrameYUV->data, pFrameYUV->linesize);
                 y_size = pCodecCtx->width * pCodecCtx->height;
+                
                 fwrite(pFrameYUV->data[0], 1, y_size, fp_yuv);      // Y
                 fwrite(pFrameYUV->data[1], 1, y_size / 4, fp_yuv);  // U
                 fwrite(pFrameYUV->data[2], 1, y_size / 4, fp_yuv);  // V
@@ -189,6 +318,7 @@
         if(!got_picture){
             break;
         }
+        
         sws_scale(img_convert_ctx, (const uint8_t* const*)pFrame->data, pFrame->linesize, 0, pCodecCtx->height, pFrameYUV->data, pFrameYUV->linesize);
         int y_size = pCodecCtx->width * pCodecCtx->height;
         fwrite(pFrameYUV->data[0], 1, y_size, fp_yuv);      // Y
@@ -235,6 +365,7 @@
     NSLog(@"%@", info_ns);
     
 }
+
 
 
 
